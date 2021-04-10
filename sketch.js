@@ -1,10 +1,13 @@
-var p1,p2,a1,a2,g1,g2
+var p1,p2,a1,a2,g1,g2,p3,g11,g12
 var s1 = 0;
 var s2 = 0;
 
 function preload(){
-    a1 = loadImage("p1.png")
-    a2 = loadImage("p2.png")
+    a1 = loadImage("p11.png")
+    a2 = loadImage("p12.png")
+    p3 = loadImage("p13.png")
+    g11 = loadImage("p14.png")
+    g12 = loadImage("p15.png")
 }
 
 function setup(){
@@ -20,6 +23,15 @@ function setup(){
 
    p1.addImage(a1)
    p2.addImage(a2)
+   ball.addImage(p3)
+   g1.addImage(g11)
+   g2.addImage(g12)
+
+
+
+   p1.scale = 0.2
+   ball.scale = 0.1
+   g2.scale = 0.3
 }
 
 function draw(){
